@@ -1,0 +1,4 @@
+.npm: es el gestor de libreria de node
+.comandos: npm créate vite@latest(es el comando para crear un proyecto vite)
+.npm install(sirve para instalar las dependencias del proyecto)
+.npm run dev(lo que es levantar un servidor local atraves de vite para correr la aplicación)
