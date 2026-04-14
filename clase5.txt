@@ -1,0 +1,11 @@
+Una rama  secundaria sirve para tener una copia del proyecto con esa copia y luego se sube con git push a la rama principal, hay que evitar subirlo a pull
+git= sistema de controles de versione distribuido.
+PR= pull request.
+git init=crea un nuevo repositorio local.
+git clone<url>=copia un repositorio remoto existente.
+git add<archivo>=prepara los cambios para el commit.
+git commit -m "mensje"=guarda los cambios preparados con una descripción.
+git push=sube los commit locales al repositorio remoto.
+git pull=descarga e integra los cambios del repositorio remoto al local.
+git status=muestra el estado de los archivos y cambios.
+repositorio= es un proyecto donde guardo mis archivos.

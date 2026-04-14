@@ -7,3 +7,6 @@ Un vue js nos da un conjunto de carpetas y en sus carpetas donde nos va a decir 
 Frontend es lo que nos muestra la página web.
 Backend es la logica de la aplicacion osea todo lo que esta detrás.
 IDE es el entorno de desarollo integrado.
+
+Un sketch es un esquema visual de como pienso que será mi pagina web.
+Los componentes en vue permiten hacer códigos reutilizables y son partes de la página web. Esta compuesto por tres partes: el HTML(esta en etiqueta template), los estilos(etiqueta style), y JavaScript (que esta en la etiqueta script).
