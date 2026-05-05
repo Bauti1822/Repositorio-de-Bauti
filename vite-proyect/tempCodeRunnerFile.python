@@ -1,0 +1,14 @@
+nombre=input(str("Ingrese su nombre: "))
+edad=input(int("Ingrese su edad: "))
+print("Su edad es:")
+print("Su nombre es:", nombre)
+if edad < 18:
+    print("Acceso denegado")
+elif edad >= 18:
+    print("Acceso básico")
+elif edad >= 26:
+    print("Acceso intermedo")
+elif edad > 40:
+    print("Acceso avanzado")
+else:
+    print("La edad ingresada no es válida")
