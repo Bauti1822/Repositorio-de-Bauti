@@ -14,5 +14,6 @@ export default { name: "Footer" };
   color:#fff;
   text-align:center;
   padding:15px;
+  margin-top: 50vh;
 }
 </style>
