@@ -1,36 +1,31 @@
 <template>
-  <div class="page">
+  <main class="content">
+  <div v-if="!mostrarProductos">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>BASKETSHOES</h1>
 
-    <main class="content">
+        <p>
+          Las mejores zapatillas de básquet, estilo y rendimiento en un solo lugar.
+        </p>
 
-      <!-- HERO -->
-      <section class="hero">
-
-        <div class="hero-content">
-          <h1>BASKETSHOES</h1>
-
-          <p>
-            Las mejores zapatillas de básquet, estilo y rendimiento en un solo lugar.
-          </p>
-
-          <div class="hero-buttons">
-            <button class="btn-primary">Comprar Ahora</button>
-            <button class="btn-secondary">Ver Productos</button>
-          </div>
+        <div class="hero-buttons">
+          <button class="btn-secondary" @click="mostrarProductos = true">Ver Productos</button>
         </div>
+      </div>
 
-        <div class="hero-image">
-          <img
-            src="https://wp.theringer.com/wp-content/uploads/2026/05/cropped-WembyTakesGame7_Getty-Ringer-scaled-1.jpg"
-            alt="Victor Wembanyama"
-          />
-        </div>
+      <div class="hero-image">
+        <img
+          src="https://wp.theringer.com/wp-content/uploads/2026/05/cropped-WembyTakesGame7_Getty-Ringer-scaled-1.jpg"
+          alt="Victor Wembanyama"
+        />
+      </div>
+    </section>
 
-      </section>
-
-      <!-- PRODUCTOS -->
-      <section class="shoes-section">
-        <h2>Zapatillas Destacadas</h2>
+    <!-- PRODUCTOS -->
+    <section class="shoes-section">
+      <h2>Zapatillas Destacadas</h2>
 
         <div class="shoes-grid">
 
@@ -83,11 +78,12 @@
           </div>
 
         </div>
-      </section>
 
-      <!-- BENEFICIOS -->
-      <section class="features-section">
-        <h2>¿Por qué elegir BasketShoes?</h2>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="features-section">
+      <h2>¿Por qué elegir BasketShoes?</h2>
 
         <div class="features-grid">
 
@@ -112,23 +108,32 @@
           </div>
 
         </div>
-      </section>
 
-      
-    </main>
-
-    <Footer />
+    </section>
 
   </div>
+
+  <VerProductos v-else />
+
+</main>
+
+<Footer />
 </template>
 
 <script>
 import Footer from "./components/Footer.vue";
+import VerProductos from "./components/VerProductos.vue";
 
 export default {
   name: "App",
   components: {
     Footer,
+    VerProductos,
+  },
+  data() {
+    return {
+      mostrarProductos: false,
+    };
   },
 };
 </script>
